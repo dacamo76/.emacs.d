@@ -1,0 +1,3 @@
+[submodule "elisp/better-defaults"]
+	path = elisp/better-defaults
+	url = https://github.com/dacamo76/better-defaults.git
