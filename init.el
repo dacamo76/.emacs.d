@@ -30,14 +30,19 @@
   (package-refresh-contents))
 
 ;; my packages
-(defvar my-packages '(clojure-mode
+(defvar my-packages '(smartparens
+                      clojure-mode
                       clojure-test-mode
                       nrepl
-                      smartparens
                       magit
                       paredit
+                      yaml-mode
+                      scss-mode
+                      rhtml-mode
+                      rinari
+                      exec-path-from-shell
                       zenburn-theme
-		      solarized-theme)
+                      solarized-theme)
   "A list of my-packages to ensure are installed at launch.")
 
 
@@ -48,3 +53,7 @@
 (require 'better-defaults)
 (smartparens-global-mode t)
 (load-theme 'zenburn)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+(global-rinari-mode t)
