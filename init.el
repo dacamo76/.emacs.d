@@ -33,7 +33,7 @@
 (defvar my-packages '(smartparens
                       clojure-mode
                       clojure-test-mode
-                      nrepl
+                      cider 
                       magit
                       paredit
                       yaml-mode
