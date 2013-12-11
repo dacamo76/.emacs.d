@@ -33,9 +33,8 @@
 (defvar my-packages '(smartparens
                       clojure-mode
                       clojure-test-mode
-                      cider 
+                      cider
                       magit
-                      paredit
                       yaml-mode
                       scss-mode
                       rhtml-mode
@@ -51,6 +50,7 @@
     (package-install p)))
 
 (require 'better-defaults)
+(require 'smartparens-config)
 (smartparens-global-mode t)
 (load-theme 'zenburn)
 
