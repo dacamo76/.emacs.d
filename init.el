@@ -40,6 +40,7 @@
                       rhtml-mode
                       rinari
                       exec-path-from-shell
+                      rainbow-delimiters
                       zenburn-theme
                       solarized-theme)
   "A list of my-packages to ensure are installed at launch.")
@@ -52,6 +53,8 @@
 (require 'better-defaults)
 (require 'smartparens-config)
 (smartparens-global-mode t)
+(require 'rainbow-delimiters)
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 (load-theme 'zenburn)
 
 (when (memq window-system '(mac ns))
