@@ -32,7 +32,6 @@
 ;; my packages
 (defvar my-packages '(smartparens
                       clojure-mode
-                      clojure-test-mode
                       cider
                       magit
                       yaml-mode
